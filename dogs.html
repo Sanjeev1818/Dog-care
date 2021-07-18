@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        .navbar ul{
+            padding-left: 300px;
+          
+        }
+        .navbar ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding-left:20px;
+            margin-left: 20px;
+            font-style:normal;
+            padding:20px;          
+        }
+        a:hover{
+            color: orangered;
+        }
+
+        a{
+            color: white;
+        }
+        .firstpage{
+            background-image: url(pic/img111.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+        .navbar{
+            display: flex;
+            font-style: normal;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+        }
+        .navbar h1{
+            padding:15px;
+            font-size: 35px;
+            color: white;
+        }
+        input{
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .head2{
+            margin:100px;
+            color: white;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head2 h1{
+            font-size: 50px;
+            font-weight: lighter;
+
+        }
+        .head2 p{
+            font-size: 20px;
+            font-weight:initial;
+            padding:20px 10px 0px 0px;
+        }
+        #btn1{
+            border-radius: 10px;
+            padding:15px;
+            margin:20px;
+            cursor: pointer;
+        }
+        #btn2{
+            border-radius: 10px;
+            padding:15px;   
+            background-color: transparent;  
+            color: white;  
+            cursor: pointer; 
+        }
+        #btn1:hover{
+            background-color: transparent;
+            color:white;
+        }
+        #btn2:hover{
+            background-color: white;
+            color:black;
+        }
+
+        .secondpage{
+            padding:100px;
+            position: relative;
+        }
+        img{
+            height:400px;
+            width:600px;
+            
+        }
+        .aboutUs {
+            padding-left: 650px;
+            position:relative; top:-370px;
+        }
+        .aboutUs h1{
+            padding-bottom: 15px;
+        }
+        .mission{
+            position:relative; top:-300px;
+            padding-left:650px;
+            padding-right:250px;
+        }
+        .vision{
+            position: relative; top:-425px;
+            padding-left:950px;
+            padding-right:10px;
+
+        }    
+
+        .what{
+            position:relative; top:-350px;
+            max-width:550px;
+            /* bottom: 50px; */
+            left:450px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:lighter;
+            padding-bottom: 10px;
+        }
+
+        .whath1{
+            padding-left: 120px;
+        }
+
+        .img111{
+            position: relative; top:-100px;
+            background-color:white;
+            height:400px;
+            width:100%;
+            cursor:pointer;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding:40px;
+            margin:10px;
+
+        }
+        .img111>h1:hover{
+            color: orange;
+        }
+
+        .img111>img{
+            max-width:350px;
+            height:200px;
+        }
+
+        .img111:hover{
+            box-shadow:0 0 10px 0.5px black ;
+        }
+
+        .thirdpageh1:hover{
+            color:white;
+        }
+
+        .images{
+            display: flex;
+            position:relative;
+            bottom: 250px;
+        }
+
+        .forthpage{
+            height: 20vh;
+            max-width: 400px;
+            position: relative; top:-300px;
+            left: 70px;
+            bottom: 50px;
+            font-size: 20px;
+        }
+        .inside{
+            position: relative; top:-90px;
+            left: 70px;
+            max-width: 500px;
+            height: 120px;
+            display: flex;
+        }
+
+        .review>img{
+            height: 100px;
+            max-width: 100px;
+            border-radius: 60px;
+        }
+        .review{
+            position: relative; top:-740px;
+            max-width: 900px;   
+            margin-left:600px;
+        }
+        .satisfaction{
+            padding: 0px 0px 100px 300px;
+            position: relative; top:-212px;
+        }
+
+        .fifthpage{
+            position: relative; top: -600px;
+            display: flex;
+        }
+        .fifthpage>img{
+            height: 250px;
+            width: 600px;
+            padding: 50px 0px 0px 40px;
+        }
+
+        .Dogsitting{
+            padding: 0px 30px 0px 50px;
+            margin-right:40px;
+            /* margin-left:0px; */
+        }
+
+        .Dogsitting>h2{
+            padding:10px 0px 20px 0px;
+                }
+        .Dogwalking>h2{
+            padding:10px 0px 20px 0px;
+        }
+        
+
+        .fifth{
+            display: flex;
+            position:relative; top:-700px;
+            padding-left:540px;
+        }
+
+        .Dogdentistry{
+            margin-right: 45px;
+        }
+        .Dogdentistry>h2{
+            padding:10px 0px 20px 0px;
+        }
+        .Doggrooming>h2{
+            padding:10px 0px 20px 0px;
+        }
+
+        .abc{
+            color:orangered;
+        }
+
+        .stick{
+            background-image: url(pic/img111.jpg);
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative; top:-600px;
+            /* bottom:50px; */
+        }
+
+        .stick>h2{
+            color:white;
+            padding:100px 0px 20px 100px;
+            font-family: serif;
+        }
+
+        .stick>h1{
+            color:white;
+            padding-left:100px;
+            font-family: serif;
+            font-size: 50px;
+        }
+
+        .readmore{
+            padding-left:85px;
+        }
+        #btn3{
+            border-radius: 10px;
+            padding:10px;
+            margin:20px;
+            cursor: pointer;
+        }
+        #btn3:hover{
+            background-color: transparent;
+            color:white;
+        }
+
+        .sixthpage{
+            position: relative; top:-600px;
+            padding-bottom: 20px;
+        }
+
+        .sixthpage>h2{
+            padding-left: 600px;
+            padding-bottom:10px;
+            font: bolder;
+            font-size: xx-large;
+        }
+        .sixthpage>p{
+            padding-left: 350px;
+            font-size: x-large;
+            padding-bottom: 10px;
+        }
+        .sixthpage>p1{
+            padding-left: 550px;
+            font-size: x-large;
+        }
+
+        .img222{
+            position: relative; top:-350px;
+            background-color:white;
+            height:400px;
+            width:100%;
+            cursor:pointer;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding:40px;
+            margin:10px;
+
+        }
+
+        .img222>img{
+            max-width:350px;
+            height:200px;
+        }
+        .img222>h5{
+            padding-left:270px;
+        }
+
+        .img222:hover{
+            box-shadow:0 0 10px 0.5px black ;
+        }
+
+        .sixthpageh1:hover{
+            color:white;
+        }
+
+        .images{
+            display: flex;
+            position:relative;
+            bottom: 250px;
+        }
+        #btn4{
+            border-color: white;
+            border:none;
+            background: transparent;
+            font-size: smaller;
+            cursor: pointer;
+            padding-top: 10px;
+        }
+        #btn4:hover{
+            color:orangered;
+        }
+
+        .lastpage{
+            background-color: black;
+            color: white;
+            position: relative; bottom:520px;
+            height:70vh;
+        }
+
+        .dogcare{
+            padding:70px;
+        }
+        .dogcare>h1{
+            padding-bottom: 10px;
+        }
+        .dogcare>p{
+            padding-right:800px;
+            font-size: 20px;
+            padding-bottom: 100px;
+        }
+
+        .category{
+            padding-left:550px;
+            margin-top: -205px;
+        }
+        .category>h2{
+            padding-bottom: 20px;
+        }
+
+        .news{
+            padding-left:850px;
+            margin-top: -160px;
+        }
+        .news>h2{
+            padding-bottom: 10px;
+        }
+        .news>h3{
+            padding-bottom: 10px;
+        }
+        #email{
+            border-radius: 10px;
+            height:50px;
+            width:300px;
+        }
+        #btn6{
+            padding: 7px 7px 7px 7px;
+            background-color:orangered;
+            cursor: pointer;
+        }
+
+        .right{
+            padding-top: 200px;
+            font-size: x-large;
+        }
+
+        .media{
+            padding-left:1050px;
+        }
+        .media:hover{
+            cursor: pointer;
+        }
+        
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+
+
+       
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/87016d14de.js" crossorigin="anonymous"></script>
+    <title>Dog Care</title>
+</head>
+<body>
+    <div class="firstpage">
+        <div class="navbar">
+            <h1><i class="fas fa-paw abc"></i>Dogs Care</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+                <input type="search" placeholder="Enter Keyword"/>
+                <i class="far fa-moon" onclick="myFunction()"></i>
+            </ul>
+        </div>
+        <div class="head2">
+            <h1>Providing Special Care</h1>
+            <h1>For Your Pets</h1>
+            <p>We offer special services for special pets!</p>
+
+            <button type="button" id="btn1">View Our Service</button>
+            <button type="button" id="btn2">Hire Us</button>
+            
+        </div>
+        
+    </div>
+
+    <div class="secondpage">
+        <div class="img">
+            <img src="pic/img2.jpg" alt=""/>
+        </div>
+
+        <div class="aboutUs">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Provident nemo porro explicabo culpa magni quam illum, distinctio illo 
+               ipsa molestiae eos voluptatibus tenetur  consectetur cumque.</p>            
+        </div>
+        <div class="mission"><i class="fas fa-paw abc fa-2x"></i>
+            <h1>Our Mission</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+               elit. Nemo, iste!
+            </p>
+        </div>
+
+        <div class="vision"><i class="fas fa-hand-peace abc fa-2x"></i>
+            <h1>Our Vision</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Animi, voluptatibus.</p>
+        </div>
+       
+    </div>
+
+    <div class="thirdpage">
+        <div class="what">
+            <H1>What do we do</H1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus excepturi sunt doloribus voluptatem omnis sapiente cum a laudantium officia voluptas.</p>
+        </div>
+        <div class="images">
+            <div class="img111">
+            <img src="pic/img4.jpg" alt=""> <br>
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 style='color:orangered; font-size:x-large;'>Read me</h4>
+        </div>
+        <div class="img111">
+            <img src="pic/img3.jpg" alt=""> <br>
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 style='color:orangered; font-size:x-large;'>Read me</h4>
+        </div>
+        <div class="img111">
+            <img src="pic/img3.jpg" alt=""> <br>
+            <h1>Lorem ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cumque.</p> <br><br>
+            <h4 style='color:orangered; font-size:x-large;'>Read me</h4>
+        </div>
+    </div>
+
+    <div class="forthpage">
+        <h1>Happy Customers</h1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Maiores dolorem tempore excepturi ipsum quam ullam. Lorem ipsum dolor sit amet consectetur  </p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Animi commodi modi fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at aut asperiores, officiis dolor sim</p></div>
+       <div class="inside">
+           <div class="custom">
+            <i class="fas fa-user-plus fa-2x abc"></i>
+               <h1>100K+</h1>
+               <p>Customers</p>
+               </div>
+        </div>
+        <div class="satisfaction">
+            <i class="fas fa-thumbs-up fa-2x abc"></i>
+            <h1>100%</h1>
+            <p>Satisfaction</p>
+        </div>
+
+        <div class="review">
+        
+            <img src="pic/ppl1.jpg" alt="">
+            <H1 style="color: rgb(7, 7, 68);">"</H1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Numquam dolores dignissimos  ex iure at rerum!</p>
+            <br>
+            <h4 style="color: rgb(7, 7, 68);">Mario spe</h4><br><br>
+        
+       
+            <img src="pic/ppl2.jpg" alt="">
+            <H1 style="color: rgb(7, 7, 68);">"</H1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Numquam doloresam ex iure at rerum!</p>
+            <br>
+            <h4 style="color: rgb(7, 7, 68);">Petey Cru</h4>
+       
+        </div>
+    </div>
+
+    <div class="fifthpage">
+        <img src="pic/whitebg.jpg" alt="" />
+        <div class="Dogsitting"> <i class="fas fa-thumbs-up abc fa-2x"></i>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Dog Sitting</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, deleniti.</p>
+        </div>
+
+        <div class="Dogwalking"> <i class="fas fa-paw abc fa-2x"></i>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Dog Walking</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, accusamus.</p>
+        </div>
+    </div>
+
+    <div class="fifth">
+
+        <div class="Dogdentistry"> <i class="fas fa-bullhorn abc fa-2x"></i>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Dog Dentistry</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, accusamus.</p>
+        </div>
+
+        <div class="Doggrooming"> <i class="fas fa-cut abc fa-2x"></i>
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Dog Grooming</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, accusamus.</p>
+        </div>
+
+    </div>
+
+    <div class="sixthpage">
+        <h2>Latest News</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, similique.</p>
+        <p1>Lorem ipsum dolor sit amet.</p1>
+    </div>
+
+        <div class="images">
+            <div class="img222">
+            <img src="pic/img4.jpg" alt=""> <br>
+            <h5>May 05, 2021</h5>
+            <h1>Hello World!</h1>
+            <button type="button" id="btn4">Read Me ></button>
+        </div>
+        <div class="img222">
+            <img src="pic/img3.jpg" alt=""> <br>
+            <h5>May 05, 2021</h5>
+            <h1>How to keep your dog cool this summer</h1>
+            <button type="button" id="btn4">Read Me ></button>
+        </div>
+        <div class="img222">
+            <img src="pic/img3.jpg" alt=""> <br>
+            <h5>May 05, 2021</h5>
+            <h1>Solution for grooming behaviour problems</h1>
+            <button type="button" id="btn4">Read Me ></button>
+        </div>
+    </div>
+
+    <div class="stick">
+        <h2>PET LOVERS</h2>
+        <h1>Our Team Is Filled With Highly</h1>
+        <h1>Dedicated Pet Lovers</h1>
+
+        <div class="readmore">
+            <button type="button" id="btn3">Read More</button>
+        </div>
+    </div>
+
+    <div class="lastpage">
+        <div class="dogcare"> 
+            <h1><i class="fas fa-paw abc"></i> Dogs Care</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate architecto provident magnam, recusandae doloribus.</p>
+
+        <div class="category">
+            <h2>CATEGORIES</h2>
+            <ul>
+                <li><a href="">Dog</a></li>
+                <li><a href="">Dog Care</a></li>
+                <li><a href="">Pets</a></li>
+                <li><a href="">Uncategories</a></li>
+                <li><a href="">May 2021</a></li>
+                <li><a href="">April 2021</a></li>
+            </ul>
+        </div>
+
+        <div class="news">
+            <h2>NEWSLETTER</h2>
+            <h3>SUBSCRIBE HERE NOW</h3>
+            <input type="text" id="email" placeholder="Email Address"/> 
+            <button type="submit" id="btn6"><i class="far fa-paper-plane fa-2x"></i></button>
+        </div>
+
+        <div class="right">
+            <p>© 2021 Dogs Care. All Rights Reserved | WordPress Theme by W3Layouts.</p>
+        </div>
+
+        <div class="media">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-google-plus fa-2x"></i>
+            <i class="fab fa-github fa-2x"></i>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+    </script>
+
+
+
+    
+</body>
+</html>

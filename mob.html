@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" 
+        required
+        autofocus/>
+        <br> <br>
+
+        <label for="midname">Middle Name:</label>
+        <input type="text" id="midname" name="midname"
+        required />
+        <br> <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"
+        required />
+        <br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option disabled="disabled" selected="selected">Courses</option>
+            <option>Bsc. Computing</option>
+            <option>Networking</option>
+            
+        </select>
+        <br> <br>
+
+        <label for="gender">Gender:</label> 
+        <br>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender" value="other"/>
+        <label for="other">Other</label>
+        <br><br>
+
+        <Label for="phone">Phone: </Label>
+        <select>
+        <option>+91</option>
+        </select>
+        <input type="phone" id="phone" name="phone"
+        required />
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="5" cols="90"></textarea>
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email"/>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required/>
+        <br><br>
+
+        <label for= "repassword">Re-write Password:</label>
+        <input type="password" id="repassword" name="repassword" required/>
+        <br> <br>
+
+        <button type="submit">Submit</button>
+    </body>
+</html>
